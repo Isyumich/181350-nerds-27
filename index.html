@@ -55,7 +55,7 @@
         <h2>Наши услуги</h2>
         <ul>
           <li>
-            <h3>веб-сайты</h3>
+            <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <button type="button">Заказать</button>
           </li>
@@ -103,42 +103,70 @@
         <h2>Список партнеров</h2>
         <ul>
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="#" alt="Логотип HTML Academy">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Логотип HTML-Academy"></a>
           </li>
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="#" alt="Логотип Барбершопа">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Логотип Барбершопа"></a>
           </li>
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="#" alt="Логотип PINK">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              aria-label="Логотип Pink"></a>
           </li>
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="#" alt="Логотип Mishka">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              aria-label="Логотип Mishka"></a>
           </li>
         </ul>
+      </section>
+      <section>
+        <h2>Адрес и контакты</h2>
+        <img src="#" alt="Карта">
+        <!--Пока что здесь будет картинка карты, после изучения джаваскрипт
+      появится настоящая карта -->
+      <div>
+        <p>Nёrds design studio</p>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <button type="button">Напишите нам</button>
+      </div>
       </section>
     </main>
     <footer>
       <div>
         <ul>
-          <li><a href="https://vk.com"><img src="img/index/vk-icon.svg"
-            width="26" height="15" alt="Логотип ВК"></a></li>
-          <li><a href="https://facebook.com"><img src="img/index/fb-icon.svg"
-          width="12" height="22" alt="Логотип фэйсбука"></a></li>
-          <li><a href="https://instagram.com"><img
-            src="img/index/insta-icon.svg" width="21" height="21"
-            alt="Логотип Инстаграма"></a></li>
+          <li><a href="https://vk.com" aria-label="Вконтакте"></a></li>
+          <li><a href="https://facebook.com" aria-label="Фэйсбук"></a></li>
+          <li><a href="https://instagram.com" aria-label="Инстаграм"></a></li>
         </ul>
         <p>Давайте дружить, это выгодно!</p>
         <p>скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="field-name">Ваше имя:</label><br>
+          <input type="text" name="name" placeholder="Имя Фамилия"
+            id="field-name">
+        </p>
+        <p>
+          <label for="field-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com"
+            id="field-email">
+        </p>
+        <p>
+          <label for="field-letter">Текст письма:</label>
+          <input type="text" name="letter" placeholder="В свободной форме"
+            id="field-letter">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

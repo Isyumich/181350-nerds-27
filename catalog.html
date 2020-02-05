@@ -31,21 +31,62 @@
       <h1>Магазин готовых шаблонов</h1>
       <section>
         <h2>Параметры</h2>
-        <ul>
-          <li><h3>Сетка</h3></li>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <ul>
-          <li><h3>Особенности</h3></li>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button type="button">Показать</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" name="range" min="0" max="15000"
+             step="1" value="10000">
+             <p>
+               От <span>0</span> до <span>15000</span>
+             </p>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+            <ul>
+              <li>
+                <input type="radio" name="grid's variant" value="adaptive"
+                  id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid's variant" value="fixed"
+                  id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid's variant" value="rubber"
+                  id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <h2>Варианты работ</h2>
@@ -64,6 +105,21 @@
             height="200" alt="Kvast"></a></li>
         </ul>
       </section>
+      <section>
+        <h2>Адрес и контакты</h2>
+        <img src="#" alt="Карта">
+        <!--Пока что здесь будет картинка карты, после изучения джаваскрипт
+      появится настоящая карта -->
+      <div>
+        <p>Nёrds design studio</p>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <button type="button">Напишите нам</button>
+      </div>
+      </section>
     </main>
     <footer>
       <div>
@@ -81,5 +137,26 @@
       <p>скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="field-name">Ваше имя:</label><br>
+          <input type="text" name="name" placeholder="Имя Фамилия"
+            id="field-name">
+        </p>
+        <p>
+          <label for="field-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com"
+            id="field-email">
+        </p>
+        <p>
+          <label for="field-letter">Текст письма:</label>
+          <input type="text" name="letter" placeholder="В свободной форме"
+            id="field-letter">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

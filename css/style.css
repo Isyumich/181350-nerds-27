@@ -1,3 +1,113 @@
 body {
-  background-color: gray;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logo:focus {
+  opacity: 0.3;
+}
+
+.slider {
+  background-color: #eeeeee;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+
+.slider-item .button {
+  background-color: #fb565a;
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.slider-headline {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.advantages {
+  list-style: none;
+}
+
+.advantages li:nth-child(1)::before {
+  display: block;
+  content: "";
+  background-image: url("../img/advantage-red.png");
+  width: 300px;
+  height: 146px;
+}
+
+.advantages li:nth-child(2)::before {
+  display: block;
+  content: "";
+  background-image: url("../img/advantage-green.png");
+  width: 300px;
+  height: 146px;
+}
+
+.advantages li:nth-child(3)::before {
+  display: block;
+  content: "";
+  background-image: url("../img/advantage-yellow.png");
+  width: 300px;
+  height: 146px;
 }

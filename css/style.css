@@ -4,10 +4,14 @@ body {
   background-color: #ffffff;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: normal;
   color: #000000;
 
+}
+
+li {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -38,11 +42,6 @@ a {
   text-transform: uppercase;
   font-weight: 500;
   line-height: 30px;
-}
-
-.site-navigation,
-.user-navigation {
-  list-style: none;
 }
 
 .site-navigation a,
@@ -76,16 +75,13 @@ a {
   width: 240px;
   height: 50px;
   line-height: 50px;
+  text-align: center;
 }
 
 .slider-headline {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-}
-
-.advantages {
-  list-style: none;
 }
 
 .advantages li:nth-child(1)::before {
@@ -110,4 +106,183 @@ a {
   background-image: url("../img/advantage-yellow.png");
   width: 300px;
   height: 146px;
+}
+
+.advantages-item h3 {
+  text-transform: uppercase;
+}
+
+.advantages .button {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+.advantages-item:nth-of-type(1) a {
+  background-color: #fb565a;
+}
+
+.advantages-item:nth-of-type(2) a {
+  background-color: #00ca74;
+}
+
+.advantages-item:nth-of-type(3) a {
+  background-color: #efc84a;
+}
+
+.description-heading {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.description-service {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description-service-item li::before{
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.statistics p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.statistics-percent td {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.statistics-description td {
+  line-height: 18px;
+}
+
+.html-ac {
+  display: block;
+  background-image: url(../img/htmlacademy-logo.png);
+  background-repeat: no-repeat;
+  width: 199px;
+  height: 68px;
+}
+
+.barber {
+  display: block;
+  background-image: url(../img/borodinski-logo.png);
+  background-repeat: no-repeat;
+  width: 209px;
+  height: 90px;
+}
+
+.pink {
+  display: block;
+  background-image: url(../img/pink-logo.png);
+  background-repeat: no-repeat;
+  width: 185px;
+  height: 52px;
+}
+
+.mishka {
+  display: block;
+  background-image: url(../img/mishka-logo.png);
+  background-repeat: no-repeat;
+  width: 173px;
+  height: 84px;
+}
+
+.studio-label {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.studio-contacts .button {
+  display: block;
+  height: 50px;
+  width: 219px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fb565a;
+}
+
+.social-networks a {
+  color: #000000;
+}
+
+.footer-social-motto {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-social-discount {
+  line-height: 24px;
+}
+
+.pop-up {
+  display: none;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.main-sorting h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.sorting-list a {
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sorting-list .sorting-price {
+  color: #000000;
+}
+
+.catalog-form button {
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #eeeeee;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sedona-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sedona-description {
+  color: #666666;
+}
+
+.sedona-price {
+  background-color: #fb565a;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
 }

@@ -1,3 +1,9 @@
+html,
+body {
+  min-width: 1440px;
+  min-height: 1925px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -42,11 +48,35 @@ a {
   text-transform: uppercase;
   font-weight: 500;
   line-height: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.site-navigation {
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 438px;
+}
+
+.user-navigation {
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 115px;
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .site-navigation a:hover,

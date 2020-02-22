@@ -1,23 +1,22 @@
-html,
+/*Общие стили*/
 body {
-  min-width: 1440px;
-  min-height: 1925px;
-}
-
-body {
+  width: 1440px;
+  height: 1925px;
   margin: 0;
   padding: 0;
+
   background-color: #ffffff;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: normal;
   color: #000000;
-
+  font-size: 16px;
 }
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -28,291 +27,71 @@ li {
   margin: -1px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .button {
   display: block;
+
   color: #ffffff;
   font-weight: 500;
+
   text-transform: uppercase;
   text-align: center;
+  background-color: #fb565a;
 }
+
+/*Стили для шапки*/
 
 .main-header {
   background-color: #eeeeee;
 }
 
 .main-navigation {
-  text-transform: uppercase;
-  font-weight: 500;
-  line-height: 30px;
-
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 140px 0 140px;
+  padding-top: 50px;
+
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-navigation a {
+  color: #000000;
+  font-weight: 700;
 }
 
 .site-navigation {
-  padding: 0px;
-  margin: 0px;
-
   display: flex;
+  width: 440px;
   justify-content: space-between;
-  width: 438px;
 }
 
 .user-navigation {
-  padding: 0px;
-  margin: 0px;
-
   display: flex;
-  justify-content: space-between;
-  width: 115px;
 }
 
-.site-navigation a,
-.user-navigation a {
-  color: #000000;
-  line-height: 30px;
-  font-weight: 600;
-}
-
-.site-navigation a:hover,
-.user-navigation a:hover {
-  color: #fb565a;
-}
-
-.site-navigation a:focus,
-.user-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.logo:focus {
-  opacity: 0.3;
-}
-
-.slider {
-  background-color: #eeeeee;
-  margin-top: -20px;
-  padding-top: 20px;
-}
-
-
-.slider-item .button {
-  background-color: #fb565a;
-  width: 240px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-}
-
-.slider-headline {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-}
-
-.advantages li:nth-child(1)::before {
+.user-navigation li,
+.site-navigation li {
   display: block;
+  padding-top: 10px;
+}
+
+.user-navigation .cart {
+  position: relative;
+}
+
+.cart::before {
   content: "";
-  background-image: url("../img/advantage-red.png");
-  width: 300px;
-  height: 146px;
-}
 
-.advantages li:nth-child(2)::before {
-  display: block;
-  content: "";
-  background-image: url("../img/advantage-green.png");
-  width: 300px;
-  height: 146px;
-}
+  position: absolute;
+  top: 0;
+  left: -35px;
 
-.advantages li:nth-child(3)::before {
-  display: block;
-  content: "";
-  background-image: url("../img/advantage-yellow.png");
-  width: 300px;
-  height: 146px;
-}
+  height: 15px;
+  width: 15px;
 
-.advantages-item h3 {
-  text-transform: uppercase;
-}
-
-.advantages .button {
-  width: 160px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-}
-
-
-.advantages-item:nth-of-type(1) a {
-  background-color: #fb565a;
-}
-
-.advantages-item:nth-of-type(2) a {
-  background-color: #00ca74;
-}
-
-.advantages-item:nth-of-type(3) a {
-  background-color: #efc84a;
-}
-
-.description-heading {
-  font-size: 45px;
-  font-weight: 500;
-}
-
-.description-service {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.description-service-item li::before{
-  content: "";
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.statistics p {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.statistics-percent td {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 10px;
-}
-
-.statistics-description td {
-  line-height: 18px;
-}
-
-.html-ac {
-  display: block;
-  background-image: url(../img/htmlacademy-logo.png);
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
-  width: 199px;
-  height: 68px;
-}
-
-.barber {
-  display: block;
-  background-image: url(../img/borodinski-logo.png);
-  background-repeat: no-repeat;
-  width: 209px;
-  height: 90px;
-}
-
-.pink {
-  display: block;
-  background-image: url(../img/pink-logo.png);
-  background-repeat: no-repeat;
-  width: 185px;
-  height: 52px;
-}
-
-.mishka {
-  display: block;
-  background-image: url(../img/mishka-logo.png);
-  background-repeat: no-repeat;
-  width: 173px;
-  height: 84px;
-}
-
-.studio-label {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.studio-contacts .button {
-  display: block;
-  height: 50px;
-  width: 219px;
-  text-align: center;
-  line-height: 50px;
-  background-color: #fb565a;
-}
-
-.social-networks a {
-  color: #000000;
-}
-
-.footer-social-motto {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.footer-social-discount {
-  line-height: 24px;
-}
-
-.pop-up {
-  display: none;
-}
-
-h1 {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
-
-.main-sorting h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
-.sorting-list a {
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.sorting-list .sorting-price {
-  color: #000000;
-}
-
-.catalog-form button {
-  display: block;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #eeeeee;
-  width: 260px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-}
-
-.sedona-label {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.sedona-description {
-  color: #666666;
-}
-
-.example-item-price {
-  background-color: #fb565a;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
+  background-position: 0 0;
 }

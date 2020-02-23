@@ -42,6 +42,7 @@ a {
 
 .main-header {
   background-color: #eeeeee;
+  margin-bottom: 0;
 }
 
 .main-navigation {
@@ -63,6 +64,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 440px;
   justify-content: space-between;
 }
@@ -94,4 +96,49 @@ a {
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+/*Стили основной части*/
+
+.slider-wrapper {
+  height: 413px;
+  padding: 0 140px 0 140px;
+  background-color: #eeeeee;
+}
+
+.slider-item {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.slider-item .slider-item-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.slider-item::after {
+  display: block;
+  content: "";
+  background-image: url("../img/slide-picture.png");
+  background-repeat: no-repeat;
+  min-width: 698px;
+  min-height: 413px;
+}
+
+.slider-headline {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.slider-item .button {
+  background-color: #fb565a;
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }

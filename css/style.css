@@ -251,7 +251,7 @@ a {
   flex-direction: column;
 }
 
-.short-description > h3 {
+.short-description > h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -268,29 +268,29 @@ a {
 .description-service {
   padding: 0;
   margin: 0;
-  margin-top: 47px;
 }
 
 .description-service li {
+  position: relative;
+  padding-left: 35px;
   margin: 0;
   margin-top: 35px;
 }
 
-.description-service li:first-child {
-  margin: 0;
-}
-
 .description-service-heading {
   margin: 0;
+  margin-top: 47px;
 }
 
-.description-service li:not(:first-child)::before {
+.description-service li::before {
   content: "";
-  display: inline-block;
+
   width: 25px;
   height: 2px;
+
+  position: absolute;
+  top: 6px;
+  left: 0px;
+
   background-color: #fb565a;
-  vertical-align: middle;
-  margin-right: 10px;
-  line-height: 24px;
 }

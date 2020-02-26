@@ -294,3 +294,35 @@ a {
 
   background-color: #fb565a;
 }
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistic-item::before {
+  content: "";
+  width: 360px;
+  height: 208px;
+  background-image: url("../img/nerds-picture.png");
+}
+
+.statistic-item p {
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-self: center;
+  margin-top: 41px;
+  margin-bottom: 23px;
+}
+
+.statistic table {
+  border-spacing: 26px;
+  width: 360px;
+}
+
+.statistic-percent td {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}

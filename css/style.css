@@ -101,6 +101,8 @@ a {
 
 /*Стили основной части*/
 
+/*Стили для слайдера*/
+
 .slider-wrapper {
   margin: 0;
   min-height: 413px;
@@ -177,7 +179,7 @@ a {
   width: 240px;
 }
 
-
+/*Стили для блока преимуществ*/
 .advantages {
   margin: 80px 200px 0 140px;
   padding: 0;
@@ -221,4 +223,74 @@ a {
 
 .advantages-item .button {
   width: 160px;
+}
+
+.section-advantages::after {
+  display: block;
+  content: "";
+  margin: 80px 140px 0 140px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+/*Стили для блока с основной информацией*/
+
+.main-information {
+  margin: 40px 140px 0 140px;
+  padding: 0;
+  min-height: 485px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-description {
+  width: 650px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.short-description > h3 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.short-description p {
+  margin: 0;
+  margin-top: 35px;
+}
+
+
+.description-service {
+  padding: 0;
+  margin: 0;
+  margin-top: 47px;
+}
+
+.description-service li {
+  margin: 0;
+  margin-top: 35px;
+}
+
+.description-service li:first-child {
+  margin: 0;
+}
+
+.description-service-heading {
+  margin: 0;
+}
+
+.description-service li:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  vertical-align: middle;
+  margin-right: 10px;
+  line-height: 24px;
 }

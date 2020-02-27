@@ -2,7 +2,7 @@
 body {
   width: 1440px;
   min-height: 1925px;
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
 
   background-color: #ffffff;
@@ -235,10 +235,10 @@ a {
 
 /*Стили для блока с основной информацией*/
 
-.main-information {
+.main-information-wrapper {
   margin: 40px 140px 0 140px;
   padding: 0;
-  min-height: 485px;
+  min-height: 375px;
 
   display: flex;
   justify-content: space-between;
@@ -298,6 +298,7 @@ a {
 .statistic-item {
   display: flex;
   flex-direction: column;
+  width: 360px;
 }
 
 .statistic-item::before {
@@ -305,6 +306,7 @@ a {
   width: 360px;
   height: 208px;
   background-image: url("../img/nerds-picture.png");
+  align-self: stretch;
 }
 
 .statistic-item p {
@@ -317,12 +319,61 @@ a {
 }
 
 .statistic table {
-  border-spacing: 26px;
   width: 360px;
+  align-self: flex-start;
 }
 
 .statistic-percent td {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
+  padding-right: 26px;
+  padding-bottom: 27px;
+}
+
+.main-information::after {
+  display: block;
+  content: "";
+  margin: 80px 140px 0 140px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.partners {
+  display: flex;
+  margin: 46px 183px 0 171px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.partners li {
+  padding: 0;
+}
+
+.partners .html-academy {
+  display: block;
+  width: 199px;
+  height: 68px;
+  background-image: url("../img/htmlacademy-logo.png");
+}
+
+.partners .barber {
+  display: block;
+  width: 209px;
+  height: 90px;
+  background-image: url("../img/borodinski-logo.png");
+}
+
+.partners .pink {
+  display: block;
+  width: 185px;
+  height: 52px;
+  background-image: url("../img/pink-logo.png");
+}
+
+.partners .mishka {
+  display: block;
+  width: 173px;
+  height: 84px;
+  background-image: url("../img/mishka-logo.png");
 }

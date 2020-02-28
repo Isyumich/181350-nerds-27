@@ -315,11 +315,11 @@ a {
   text-transform: uppercase;
   align-self: center;
   margin-top: 41px;
-  margin-bottom: 23px;
+  margin-bottom: 49px;
 }
 
 .statistic table {
-  width: 360px;
+  table-layout: auto;
   align-self: flex-start;
 }
 
@@ -327,8 +327,13 @@ a {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
-  padding-right: 26px;
-  padding-bottom: 27px;
+  height: 50px;
+}
+
+.statistic-description td {
+  line-height: 18px;
+  height: 35px;
+  padding-top: 10px;
 }
 
 .main-information::after {

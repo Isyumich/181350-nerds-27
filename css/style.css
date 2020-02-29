@@ -38,6 +38,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   background-color: #fb565a;
+  padding: 0;
 }
 
 /*Стили для шапки*/
@@ -382,3 +383,64 @@ a {
   height: 84px;
   background-image: url("../img/mishka-logo.png");
 }
+
+.section-partners::after {
+  display: block;
+  content: "";
+  margin: 44px 140px 80px 140px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+/*оформление карты*/
+
+.adress-and-contacts {
+  position: relative;
+}
+
+.studio-contacts {
+  width: 318px;
+  height: 307px;
+  background-color: white;
+  border: solid 1px white;
+
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.studio-label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 54px;
+  margin-bottom: 32px;
+}
+
+.studio-contacts p {
+  color: #666666;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.studio-contacts .button {
+  width: 219px;
+  margin-top: 12px;
+}
+
+.map-marker {
+  position: absolute;
+  top: 89px;
+  left: 820px;
+  z-index: 2;
+}
+
+/*Оформление подвала*/

@@ -34,6 +34,7 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+  border: 1px solid black;
 }
 
 .button {
@@ -59,13 +60,16 @@ img {
 .main-navigation {
   display: flex;
   width: 1160px;
-  justify-content: space-between;
   margin: 0;
   padding-top: 50px;
 
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.main-navigation ul {
+  padding: 0;
 }
 
 .main-navigation a {
@@ -78,10 +82,12 @@ img {
   flex-wrap: wrap;
   width: 440px;
   justify-content: space-between;
+  margin-left: 202px;
 }
 
 .user-navigation {
   display: flex;
+  margin-left: 286px;
 }
 
 .user-navigation li,
@@ -172,7 +178,7 @@ img {
 
 .slider-item-description h3 {
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 55px;
 
   margin: 0;
@@ -521,4 +527,100 @@ img {
 .footer-social-discount {
   color: #444444;
   line-height: 22px;
+}
+
+/*Оформление каталога*/
+
+.inner-heading-container {
+  background-color: #eeeeee;
+  margin: 0;
+  padding-top: 82px;
+  padding-bottom: 116px;
+}
+
+.inner-heading-container h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.inner-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-sorting-and-examples {
+  width: 760px;
+}
+
+.main-sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 625px;
+}
+
+.sorting-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+}
+
+.inner-filter {
+  margin-right: 140px;
+}
+
+/*Оформление примеров работ*/
+
+.section-examples ul {
+  padding: 0;
+}
+
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-examples li  {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.example-item-information {
+  display: none;
+  width: 360px;
+  height: 196px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 35px;
+
+  position: absolute;
+  top: 345px;
+  left: 0;
+  z-index: 2;
+}
+
+.example-item-information a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example-item-information .example-item-description {
+}
+
+.example-item-information .button {
+  width: 200px;
+  margin: 30px auto 0 auto;
+}
+
+.work-example-item:hover .example-item-information {
+  display: block;
 }

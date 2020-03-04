@@ -38,63 +38,71 @@
           <h2 class="visually-hidden">Параметры</h2>
           <form class="catalog-form" action="https://echo.htmlacademy.ru"
             method="get">
-            <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="margin-left: 0; width: 70%"></div>
-            </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
-          </div>
-        </div>
-      </fieldset>
-            <fieldset>
-              <legend>Сетка</legend>
+            <fieldset class="filter-item filter-item-range">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0; width: 70%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-item filter-item-radio">
+              <legend>Сетка:</legend>
               <ul>
-                <li>
-                  <input type="radio" name="grid's variant" value="adaptive"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" name="grid's variant" value="adaptive"
                     id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li>
-                  <input type="radio" name="grid's variant" value="fixed"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" name="grid's variant" value="fixed"
                     id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
-                <li>
-                  <input type="radio" name="grid's variant" value="rubber"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" name="grid's variant" value="rubber"
                     id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Особенности</legend>
+            <fieldset class="filter-item filter-item-checkbox">
+              <legend>Особенности:</legend>
               <ul>
-                <li>
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="advantages" id="filter-advantages">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="advantages" id="filter-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="news" id="filter-news" checked>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="gallery" id="filter-gallery">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="basket" id="filter-basket">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="basket" id="filter-basket">
                   <label for="filter-basket">Корзина</label>
                 </li>
               </ul>

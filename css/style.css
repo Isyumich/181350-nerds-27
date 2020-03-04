@@ -34,21 +34,21 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid black;
 }
 
 .button {
   display: block;
+  padding: 0;
 
   color: #ffffff;
   font-weight: 500;
+  border-radius: 5% 5%;
 
   height: 50px;
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
   background-color: #fb565a;
-  padding: 0;
 }
 
 /*Стили для шапки*/
@@ -254,6 +254,14 @@ img {
   width: 160px;
 }
 
+.advantages-item:nth-child(2) .button {
+  background-color: #00ca74;
+}
+
+.advantages-item:nth-child(3) .button {
+  background-color: #efc84a;
+}
+
 .section-advantages::after {
   display: block;
   content: "";
@@ -382,44 +390,19 @@ img {
   background-color: #eeeeee;
 }
 
+/*Оформление списка партнеров*/
+
 .partners {
   display: flex;
   margin: 0;
   margin-top: 46px;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
 }
 
 .partners li {
   padding: 0;
-}
-
-.partners .html-academy {
-  display: block;
-  width: 199px;
-  height: 68px;
-  background-image: url("../img/htmlacademy-logo.png");
-}
-
-.partners .barber {
-  display: block;
-  width: 209px;
-  height: 90px;
-  background-image: url("../img/borodinski-logo.png");
-}
-
-.partners .pink {
-  display: block;
-  width: 185px;
-  height: 52px;
-  background-image: url("../img/pink-logo.png");
-}
-
-.partners .mishka {
-  display: block;
-  width: 173px;
-  height: 84px;
-  background-image: url("../img/mishka-logo.png");
 }
 
 .section-partners::after {
@@ -556,9 +539,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
+/*Оформление сортировки*/
 
 .main-sorting-and-examples {
   width: 760px;
+  margin-top: 45px;
 }
 
 .main-sorting {
@@ -566,14 +551,51 @@ img {
   justify-content: space-between;
   align-items: center;
 
-  width: 625px;
+  width: 760px;
+}
+
+.main-sorting h2 {
+  margin: 0;
 }
 
 .sorting-list {
   display: flex;
   justify-content: space-between;
 
-  width: 300px;
+  width: 360px;
+  padding: 0;
+  margin: 0;
+}
+
+.sorting-list a {
+  color: #000000;
+}
+
+.sorting-list li {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-list li:first-child {
+  opacity: 1;
+}
+
+.sorting-parametrs {
+  display: flex;
+  justify-content: space-between;
+  min-width: 270px;
+
+  padding: 0;
+}
+
+.up-down-sorting {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40px;
+
+  padding: 0;
 }
 
 .inner-filter {
@@ -590,6 +612,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-top: 40px;
 }
 
 .work-examples li  {
@@ -645,4 +669,153 @@ img {
 
 .work-example-item:hover .example-item-information {
   display: block;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #eeeeee;
+  border-radius: 5%;
+
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item:last-child a {
+  width: 256px;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+  border-color: #dbdbdb;
+}
+
+/*Разметка фильтров*/
+
+/*Разметка фильтра с ползунками*/
+.filter-item {
+  margin: 0;
+  margin-top: 63px;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 165px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }

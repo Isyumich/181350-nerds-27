@@ -198,26 +198,28 @@
             сетей.</p>
         </div>
     </footer>
-    <section class="pop-up visually-hidden">
+    <section class="modal">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="field-name">Ваше имя:</label><br>
+        <p class="modal-field-name">
+          <label for="field-name">Ваше имя:</label>
           <input type="text" name="name" placeholder="Имя Фамилия"
             id="field-name">
         </p>
-        <p>
+        <p class="modal-field-email">
           <label for="field-email">Ваш e-mail:</label>
           <input type="email" name="email" placeholder="email@example.com"
             id="field-email">
         </p>
-        <p>
+        <p class="modal-field-letter">
           <label for="field-letter">Текст письма:</label>
-          <input type="text" name="letter" placeholder="В свободной форме"
-            id="field-letter">
+          <textarea name="letter" placeholder="В свободной форме"
+            id="field-letter"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button">
+      </button>
     </section>
   </body>
 </html>

@@ -1,6 +1,7 @@
 var link = document.querySelector(".modal-open");
 
 var popup = document.querySelector(".modal");
+
 var close = document.querySelector(".modal-close");
 
 link.addEventListener("click", function (evt) {

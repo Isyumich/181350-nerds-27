@@ -793,6 +793,8 @@ img {
 .example-item-information .example-item-description {
   color: #666666;
   line-height: 18px;
+  max-height: 35px;
+  overflow-y: hidden;
 }
 
 .example-item-information .example-item-price {

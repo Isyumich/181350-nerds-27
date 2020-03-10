@@ -424,13 +424,9 @@ img {
   flex-direction: column;
   width: 360px;
 }
-
-.statistic-item::before {
-  content: "";
-  width: 360px;
-  height: 208px;
-  background-image: url("../img/nerds-picture.png");
+.statistic-item img {
   align-self: stretch;
+  margin-bottom: 10px;
 }
 
 .statistic-item p {
@@ -1310,6 +1306,7 @@ img {
   width: 21px;
   height: 21px;
   background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 
   border: 0;

@@ -831,7 +831,7 @@ input:checked + label[for=btn-3] {
 .example-item-information {
   display: none;
   width: 360px;
-  height: 196px;
+  min-height: 196px;
   background-color: #eeeeee;
   text-align: center;
   padding-top: 30px;
@@ -862,8 +862,6 @@ input:checked + label[for=btn-3] {
 .example-item-information .example-item-description {
   color: #666666;
   line-height: 18px;
-  max-height: 35px;
-  overflow-y: hidden;
 }
 
 .example-item-information .example-item-price {

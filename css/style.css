@@ -169,6 +169,7 @@ img {
 .slider {
   margin: 0;
   background-color: #eeeeee;
+  position: relative;
 }
 
 .slider-wrapper {
@@ -224,11 +225,11 @@ img {
 }
 
 .slider-item-description h3 {
-  font-size: 53px;
-  font-weight: 700;
-  line-height: 53px;
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 55px;
 
-  margin: 68px 0 28px 0;
+  margin: 68px 0 24px 0;
 }
 
 .slider-item-description p {
@@ -238,6 +239,7 @@ img {
 
   line-height: 26px;
   color: #283136;
+  font-size: 17px;
 }
 
 .slider-item-description .button {
@@ -259,8 +261,8 @@ img {
 
 .slider-switch {
   position: absolute;
-  top: 430px;
-  left: 588px;
+  top: 75%;
+  left: 45%;
 }
 
 .slider-switch input[type="radio"] {
@@ -309,9 +311,9 @@ input:checked + label[for=btn-3] {
 
 .advantages-item h3 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 500;
 
   padding-left: 0px;
   margin: 25px 0 20px 0;
@@ -396,9 +398,9 @@ input:checked + label[for=btn-3] {
 }
 
 .short-description > h2 {
-  font-size: 43px;
+  font-size: 46px;
   line-height: 43px;
-  font-weight: 700;
+  font-weight: 500;
   color: #283136;
 
   margin: 0;
@@ -410,6 +412,7 @@ input:checked + label[for=btn-3] {
   margin-top: 37px;
 
   line-height: 24px;
+  font-size: 17px;
 }
 
 
@@ -639,7 +642,7 @@ input:checked + label[for=btn-3] {
 
 .main-footer {
   display: flex;
-  margin-top: 50px;
+  margin-top: 51px;
   margin-bottom: 70px;
   justify-content: flex-start;
 }
@@ -714,7 +717,7 @@ input:checked + label[for=btn-3] {
 .inner-heading-container h1 {
   margin: 0;
   text-align: center;
-  font-size: 55px;
+  font-size: 57px;
   line-height: 55px;
   font-weight: 500;
 }
@@ -837,7 +840,7 @@ input:checked + label[for=btn-3] {
   padding-top: 30px;
 
   position: absolute;
-  top: 384px;
+  bottom: 0px;
   left: 0;
   z-index: 2;
 }

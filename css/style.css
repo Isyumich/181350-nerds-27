@@ -229,7 +229,7 @@ img {
   font-weight: 500;
   line-height: 55px;
 
-  margin: 68px 0 24px 0;
+  margin: 68px 0 25px 0;
 }
 
 .slider-item-description p {
@@ -237,14 +237,16 @@ img {
   margin-bottom: 37px;
   width: 408px;
 
-  line-height: 26px;
+  line-height: 25px;
   color: #283136;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .slider-item-description .button {
   background-color: #fb565a;
   width: 240px;
+  line-height: 53px;
 }
 
 .slider-item-description .button:hover,
@@ -261,8 +263,8 @@ img {
 
 .slider-switch {
   position: absolute;
-  top: 75%;
-  left: 45%;
+  top: 73%;
+  left: 47%;
 }
 
 .slider-switch input[type="radio"] {
@@ -289,7 +291,7 @@ input:checked + label[for=btn-3] {
 /*Стили для блока преимуществ*/
 .advantages {
   margin: 0;
-  margin-top: 80px;
+  margin-top: 81px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -398,8 +400,8 @@ input:checked + label[for=btn-3] {
 }
 
 .short-description > h2 {
-  font-size: 46px;
-  line-height: 43px;
+  font-size: 45px;
+  line-height: 45px;
   font-weight: 500;
   color: #283136;
 
@@ -409,10 +411,10 @@ input:checked + label[for=btn-3] {
 
 .short-description p {
   margin: 0;
-  margin-top: 37px;
+  margin-top: 33px;
 
   line-height: 24px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 

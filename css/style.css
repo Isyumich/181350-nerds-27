@@ -128,7 +128,7 @@ img {
 
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 42px;
 
   width: 100%;
   height: 2px;
@@ -143,8 +143,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: -35px;
+  top: 1px;
+  left: -40px;
 
   height: 15px;
   width: 15px;
@@ -170,6 +170,7 @@ img {
   margin: 0;
   background-color: #eeeeee;
   position: relative;
+  padding-top: 1px;
 }
 
 .slider-wrapper {
@@ -225,19 +226,19 @@ img {
 }
 
 .slider-item-description h3 {
-  font-size: 57px;
+  font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 
-  margin: 68px 0 25px 0;
+  margin: 68px 0 26px 0;
 }
 
 .slider-item-description p {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   width: 408px;
 
-  line-height: 25px;
+  line-height: 24px;
   color: #283136;
   font-size: 16px;
   font-weight: 500;
@@ -246,7 +247,7 @@ img {
 .slider-item-description .button {
   background-color: #fb565a;
   width: 240px;
-  line-height: 53px;
+  line-height: 54px;
 }
 
 .slider-item-description .button:hover,
@@ -313,12 +314,12 @@ input:checked + label[for=btn-3] {
 
 .advantages-item h3 {
   text-transform: uppercase;
-  font-size: 23px;
-  line-height: 24px;
-  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
 
   padding-left: 0px;
-  margin: 25px 0 20px 0;
+  margin: 23px 0 15px 0;
 }
 
 .advantages-item p {
@@ -332,6 +333,7 @@ input:checked + label[for=btn-3] {
 
 .advantages-item .button {
   width: 160px;
+  line-height: 54px;
 }
 
 .advantages-item .button:hover,
@@ -438,12 +440,12 @@ input:checked + label[for=btn-3] {
 }
 
 .description-service li:nth-child(3) {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
 .description-service-heading {
   margin: 0;
-  margin-top: 41px;
+  margin-top: 43px;
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -491,7 +493,8 @@ input:checked + label[for=btn-3] {
   line-height: 10px;
   font-weight: 700;
 
-  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   height: 50px;
   width: 102px;
 }
@@ -518,7 +521,7 @@ input:checked + label[for=btn-3] {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 46px;
+  margin-top: 47px;
   justify-content: flex-start;
   padding: 0;
   padding-left: 30px;
@@ -532,7 +535,7 @@ input:checked + label[for=btn-3] {
 }
 
 .partners li:nth-child(1) {
-  padding-top: 14px;
+  padding-top: 15px;
 }
 
 .partners li:nth-child(2) {
@@ -540,8 +543,8 @@ input:checked + label[for=btn-3] {
 }
 
 .partners li:nth-child(3) {
-  padding-top: 17px;
-  margin-left: 103px;
+  padding-top: 18px;
+  margin-left: 104px;
 }
 
 .partners li:nth-child(4) {
@@ -586,8 +589,9 @@ input:checked + label[for=btn-3] {
 .map-container {
   position: relative;
 
-  width: 1160px;
+  width: 1440px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .studio-adress {
@@ -602,8 +606,8 @@ input:checked + label[for=btn-3] {
   padding-left: 49px;
 
   position: absolute;
-  top: -366px;
-  left: 0;
+  top: 54px;
+  left: 140px;;
   z-index: 5;
 
   display: flex;
@@ -629,14 +633,14 @@ input:checked + label[for=btn-3] {
 
 .studio-contacts .button {
   width: 219px;
-  margin-top: 19px;
+  margin-top: 22px;
   border: none;
 }
 
 .map-marker {
   position: absolute;
-  top: -331px;
-  left: 679px;
+  top: 89px;
+  left: 820px;
   z-index: 2;
 }
 
@@ -688,7 +692,7 @@ input:checked + label[for=btn-3] {
 
 .footer-social {
   margin-left: 139px;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .footer-social-motto {
@@ -713,13 +717,15 @@ input:checked + label[for=btn-3] {
   background-color: #eeeeee;
   margin: 0;
   padding-top: 67px;
-  padding-bottom: 105px;
+  padding-bottom: 106px;
 }
 
 .inner-heading-container h1 {
   margin: 0;
+
   text-align: center;
-  font-size: 57px;
+  padding-top: 1px;
+  font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
@@ -733,7 +739,7 @@ input:checked + label[for=btn-3] {
 
 .main-sorting-and-examples {
   width: 760px;
-  margin-top: 45px;
+  margin-top: 44px;
 }
 
 .main-sorting {
@@ -835,11 +841,15 @@ input:checked + label[for=btn-3] {
 
 .example-item-information {
   display: none;
-  width: 360px;
-  min-height: 196px;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  max-width: 360px;
+  min-height: 195px;
   background-color: #eeeeee;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 0;
+  padding-bottom: 42px;
 
   position: absolute;
   bottom: 0px;
@@ -867,6 +877,9 @@ input:checked + label[for=btn-3] {
 .example-item-information .example-item-description {
   color: #666666;
   line-height: 18px;
+
+  margin-bottom: 2px;
+  margin-top: 18px;
 }
 
 .example-item-information .example-item-price {
@@ -924,7 +937,7 @@ input:checked + label[for=btn-3] {
 }
 
 .work-example-item:hover .example-item-information {
-  display: block;
+  display: flex;
 }
 
 .pagination-list {
@@ -993,7 +1006,7 @@ input:checked + label[for=btn-3] {
 .filter-item li {
   list-style: none;
 
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .filter-item li:last-child {
@@ -1094,7 +1107,7 @@ input:checked + label[for=btn-3] {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 32px;
   left: 0;
 
   width: 4px;
@@ -1169,14 +1182,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*Разметка фильтра с радио-кнопками*/
 .filter-item-radio {
-  margin-top: 57px;
+  margin-top: 56px;
 }
 
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
   left: -37px;
-  top: -5px;
+  top: -6px;
 
   width: 25px;
   height: 25px;
@@ -1240,7 +1253,7 @@ input[type=number]::-webkit-outer-spin-button {
   content: "";
   position: absolute;
   left: -37px;
-  top: 0;
+  top: -2px;
 
   width: 23px;
   height: 23px;

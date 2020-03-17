@@ -1144,6 +1144,7 @@ input:checked + label[for=btn-3] {
 
   font-size: 16px;
   text-transform: uppercase;
+  color: #283136;
 }
 
 .price-controls input {

@@ -624,8 +624,7 @@ input:checked + label[for=btn-3] {
 
 .map-container {
   position: relative;
-
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -643,7 +642,7 @@ input:checked + label[for=btn-3] {
 
   position: absolute;
   top: 54px;
-  left: 140px;;
+  left: 140px;
   z-index: 5;
 
   display: flex;

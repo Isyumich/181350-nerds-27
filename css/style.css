@@ -664,6 +664,7 @@ input:checked + label[for=btn-3] {
   margin: 0;
   padding: 0;
   z-index: 4;
+  border: none;
 }
 
 .studio-address {

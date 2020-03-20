@@ -1,6 +1,6 @@
 /*Общие стили*/
 body {
-  min-width: 1160px;
+  min-width: 1440px;
   min-height: 1925px;
   margin: 0;
   padding: 0;
@@ -275,12 +275,22 @@ img {
 .slider-switch label {
   display: inline-block;
   margin: 0;
+  vertical-align: middle;
   margin-right: 13px;
   width: 18px;
   height: 18px;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-switch label:hover,
+.slider-switch label:focus {
+  background-color: #808080;
+}
+
+.slider-switch label:active {
+  background-color: #283136;
 }
 
 input:checked + label[for=btn-1],
@@ -311,6 +321,24 @@ input:checked + label[for=btn-3] {
   margin-right: 0;
 }
 
+.advantages-item::before {
+  content: "";
+
+  display: block;
+  width: 300px;
+  height: 146px;
+
+  background-image: url("../img/advantage-red.png");
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url("../img/advantage-green.png");
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url("../img/advantage-yellow.png");
+}
+
 .advantages-item h3 {
   text-transform: uppercase;
   font-size: 24px;
@@ -318,7 +346,7 @@ input:checked + label[for=btn-3] {
   font-weight: 700;
 
   padding-left: 0px;
-  margin: 22px 0 15px 0;
+  margin: 25px 0 17px 0;
 }
 
 .advantages-item p {
@@ -328,7 +356,7 @@ input:checked + label[for=btn-3] {
 
   width: 250px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .advantages-item .button {
@@ -468,6 +496,7 @@ input:checked + label[for=btn-3] {
   flex-direction: column;
   width: 360px;
 }
+
 .statistic-item img {
   align-self: stretch;
   margin-bottom: 10px;
@@ -549,7 +578,7 @@ input:checked + label[for=btn-3] {
   left: 247px;
   height: 52px;
   width: 2px;
-  background-color: black;
+  background-color: #808080;
 }
 
 .partners li:nth-child(2)::after {
@@ -560,7 +589,7 @@ input:checked + label[for=btn-3] {
   left: 254px;
   height: 52px;
   width: 2px;
-  background-color: black;
+  background-color: #808080;
 }
 
 .partners li:nth-child(3)::after {
@@ -571,7 +600,7 @@ input:checked + label[for=btn-3] {
   left: 240px;
   height: 52px;
   width: 2px;
-  background-color: black;
+  background-color: #808080;
 }
 
 .partners li:nth-child(2) {
@@ -618,7 +647,7 @@ input:checked + label[for=btn-3] {
 
 /*оформление карты*/
 
-.adress-and-contacts {
+.address-and-contacts {
   margin-top: 80px;
 }
 
@@ -629,7 +658,15 @@ input:checked + label[for=btn-3] {
   padding: 0;
 }
 
-.studio-adress {
+.map-container iframe {
+  position: absolute;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 4;
+}
+
+.studio-address {
   width: 202px;
 }
 
@@ -665,6 +702,10 @@ input:checked + label[for=btn-3] {
   margin: 0;
   margin-bottom: 18px;
   padding-left: 2px;
+}
+
+.tel-number a {
+  color: #666666;
 }
 
 .studio-contacts .button {
@@ -1175,6 +1216,7 @@ input:checked + label[for=btn-3] {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -1350,6 +1392,64 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*Оформление модального окна*/
 
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(-200%);
+  }
+
+  70% {
+    transform: translateX(-50%) translateY(-35%px);
+  }
+
+  90% {
+    transform: translateX(-50%) translateY(-55%px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-55%) translateY(-50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-45%) translateY(-50%);
+  }
+}
+
+@keyframes closing {
+  0% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  70% {
+    transform: translateX(-50%) translateY(-60%px);
+  }
+
+  90% {
+    transform: translateX(-50%) translateY(-80%px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-200%);
+  }
+}
+
 .modal {
   display: none;
 
@@ -1372,6 +1472,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .modal-active {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-close-animation {
+  animation: closing 0.6s;
 }
 
 .modal h2 {
@@ -1386,6 +1496,7 @@ input[type=number]::-webkit-outer-spin-button {
 .modal p {
   display: inline-block;
   margin: 0;
+  vertical-align: top;
 }
 
 .modal .modal-field-name {
@@ -1425,17 +1536,20 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 14px;
 }
 
-.modal input:hover {
+.modal input:hover,
+.modal-field-letter textarea:hover {
   border: solid 2px #b4b9bb;
 }
 
-.modal input:focus {
+.modal input:focus,
+.modal-field-letter textarea:focus {
   color: #444444;
 
   border: solid 2px #000000;
 }
 
-.modal input:invalid {
+.modal input:invalid,
+.modal-field-letter textarea:invalid {
   color: #e74246;
 
   border: solid 2px #e74246;
@@ -1444,6 +1558,8 @@ input[type=number]::-webkit-outer-spin-button {
 .modal-field-letter textarea {
   width: 760px;
   box-sizing: border-box;
+  border: solid 2px #d7dcde;
+  color: rgba(68, 68, 68, 0.5);
 
   margin-top: 9px;
   padding-top: 13px;
@@ -1476,3 +1592,5 @@ input[type=number]::-webkit-outer-spin-button {
 .modal-close:active {
   opacity: 0.1;
 }
+
+/*Оформление карты*/
